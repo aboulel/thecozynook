@@ -1,0 +1,119 @@
+/* Contact Page Styles */
+.contact-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-container h2 {
+    font-size: 2rem;
+    color: #3F2537;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 10px;
+}
+
+.contact-container p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    padding: 20px;
+}
+
+/* Input Fields */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-data {
+    position: relative;
+    width: 48%;
+}
+
+.input-data input,
+.textarea textarea {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-data input:focus,
+.textarea textarea:focus {
+    border-color: #CA9978;
+}
+
+.input-data label {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    color: #555;
+}
+
+.input-data input:focus ~ label,
+.textarea textarea:focus ~ label,
+.input-data input:valid ~ label,
+.textarea textarea:valid ~ label {
+    transform: translateY(-20px);
+    font-size: 0.85rem;
+    color: #CA9978;
+}
+
+/* Submit Button */
+.submit-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.submit-btn .input-data {
+    width: 100%;
+}
+
+.submit-btn input {
+    background: #CA9978;
+    color: white;
+   
+}/* Floating label active */
+.input-data label.active {
+    transform: translateY(-20px);
+    font-size: 0.85rem;
+    color: #CA9978;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Shake Effect for empty inputs */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
+
+.shake {
+    animation: shake 0.4s ease-in-out;
+    border-bottom: 2px solid red !important;
+}
+
+/* Submit button click effect */
+.clicked {
+    animation: clickEffect 0.4s ease-in-out;
+}
+
+@keyframes clickEffect {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.95); }
+    100% { transform: scale(1); }
+}

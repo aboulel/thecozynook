@@ -6,42 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - The Cozy Nook</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-    <header>Contact Us</header>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            
-            <li><a href="team.html">Team</a></li>
+            <li><a href="team.html">Team/About Us</a></li>
             <li><a href="contact.html">Contact</a></li>
-            
             <div class="cart-container">
-                <a href="cart.html" class="cart-link">🛒 <span class="cart-count">0</span></a>
+                <a href="cart.html" class="cart-link">
+                    <span>🛒</span> <span class="cart-count">0</span>
+                </a>
             </div>
         </ul>
     </nav>
-    <main>
+
+    <main class="contact-container">
         <h2>Get in Touch</h2>
         <p>We’d love to hear from you! Reach out to us for any inquiries or support.</p>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            
-            <button type="submit">Send Message</button>
-        </form>
+        
+        <div class="contact-form">
+            <form action="#">
+                <div class="form-row">
+                    <div class="input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">First Name</label>
+                    </div>
+                    <div class="input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">Last Name</label>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="input-data">
+                        <input type="email" required>
+                        <div class="underline"></div>
+                        <label for="">Email Address</label>
+                    </div>
+                    <div class="input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">Website Name</label>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="input-data textarea">
+                        <textarea rows="8" required></textarea>
+                        <div class="underline"></div>
+                        <label for="">Write your message</label>
+                    </div>
+                </div>
+
+                <div class="form-row submit-btn">
+                    <div class="input-data">
+                        <div class="inner"></div>
+                        <input type="submit" value="Submit">
+                    </div>
+                </div>
+            </form>
+        </div>
     </main>
+
     <footer>
         <p>&copy; 2025 The Cozy Nook | All rights reserved.</p>
     </footer>
 </body>
+<script src="contact.js"></script>
+
 </html>
