@@ -1,0 +1,109 @@
+/* Services Page Styling */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    width: 45%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    position: relative;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.service-box h2 {
+    font-size: 2rem;
+    color: #3F2537;
+    font-family: 'Merriweather', serif;
+}
+
+.service-box p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.service-box form {
+    display: none;
+    margin-top: 20px;
+}
+
+.service-box.expanded {
+    width: 60%;
+    padding: 30px;
+    background: rgba(202, 153, 120, 0.95);
+    color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.service-box.expanded form {
+    display: block;
+}
+
+.service-box.expanded h2 {
+    color: white;
+}
+
+/* Form Styling */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #b27c6b;
+    border-radius: 5px;
+    font-family: 'Merriweather', serif;
+}
+
+button {
+    background: #CA9978;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #b88364;
+}
+
+.confirmation-message {
+    display: none;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #3F2537;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .service-box {
+        width: 90%;
+    }
+
+    .service-box.expanded {
+        width: 95%;
+    }
+}

@@ -1,0 +1,113 @@
+/* Updated Login Page Styling to Match Website Theme */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+html, body {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: url('images/image2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #3F2537;
+}
+
+.container {
+    background: white;
+    max-width: 400px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.container .title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #CA9978;
+    font-family: 'Playfair Display', serif;
+}
+
+.input-box {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #CA9978;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-box input:focus {
+    border-color: #b27c6b;
+    box-shadow: 0 0 8px rgba(202, 153, 120, 0.5);
+}
+
+.button input[type="submit"] {
+    width: 100%;
+    background: #CA9978;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button input[type="submit"]:hover {
+    background: #b27c6b;
+}
+
+.option {
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+/* Social Media Buttons */
+.twitter a, .facebook a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+    padding: 10px;
+}
+
+.twitter a {
+    background: linear-gradient(to right, #00acee, #1abeff);
+    margin: 10px 0;
+}
+
+.twitter a:hover {
+    background: linear-gradient(to left, #00acee, #1abeff);
+}
+
+.facebook a {
+    background: linear-gradient(to right, #3b5998, #476bb8);
+}
+
+.facebook a:hover {
+    background: linear-gradient(to left, #3b5998, #476bb8);
+}

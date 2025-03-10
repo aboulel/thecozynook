@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - The Cozy Nook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+    <header>Our Services</header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="team.html">Team/About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <div class="cart-container">
+                <a href="cart.html" class="cart-link">🛒 <span class="cart-count">0</span></a>
+            </div>
+        </ul>
+    </nav>
+    <main>
+        <!-- Delivery Services -->
+        <section id="delivery-services" class="service-box">
+            <h2>Delivery Services</h2>
+            <p>Click to enter your delivery details.</p>
+            <form id="delivery-form">
+                <label for="customer-name">Full Name:</label>
+                <input type="text" id="customer-name" name="customer-name" required>
+                
+                <label for="customer-address">Address:</label>
+                <textarea id="customer-address" name="customer-address" required></textarea>
+                
+                <label for="customer-phone">Phone Number:</label>
+                <input type="tel" id="customer-phone" name="customer-phone" required>
+                
+                <button type="submit">Confirm Order</button>
+            </form>
+            <p id="confirmation-message" class="confirmation-message">Your order has been processed successfully!</p>
+        </section>
+
+        <!-- Maintenance Services -->
+        <section id="maintenance-services" class="service-box">
+            <h2>Maintenance Services</h2>
+            <p>Click to submit a problem or feedback.</p>
+            <form id="maintenance-form">
+                <label for="customer-feedback">Your Message:</label>
+                <textarea id="customer-feedback" name="customer-feedback" placeholder="Describe the issue..." required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+            <p id="maintenance-confirmation" class="confirmation-message">Your message has been received!</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 The Cozy Nook | All rights reserved.</p>
+    </footer>
+
+    <script src="services.js"></script>
+</body>
+</html>
