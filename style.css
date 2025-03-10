@@ -303,17 +303,21 @@ footer {
     width: 100%;
 }/* ======== FIXES FOR GALLERY PAGE (DOES NOT TOUCH HOME PAGE) ======== */
 
-/* Fix Dropdown Styling */
+//* ======== FIXES FOR GALLERY PAGE (DOES NOT TOUCH HOME PAGE) ======== */
+
+/* ======== FIXES FOR GALLERY PAGE (DOES NOT TOUCH HOME PAGE) ======== */
+
+/* Dropdown Styling */
 #category-select {
     background: #CA9978;
     color: white;
-    padding: 12px;  /* Increased padding for better look */
+    padding: 12px;
     border: 1px solid #b27c6b;
-    border-radius: 8px;  /* Slightly rounded corners */
-    font-size: 18px;  /* Larger text */
+    border-radius: 8px;
+    font-size: 18px;
     font-family: 'Merriweather', serif;
     cursor: pointer;
-    width: 280px;  /* Increased width for better appearance */
+    width: 280px;
     display: block;
     margin: 10px auto;
     text-align: center;
@@ -328,27 +332,39 @@ footer {
     font-size: 16px;
 }
 
-/* Hover & Selected Effect */
-#category-select option:hover,
-#category-select option:checked {
-    background: #C39272 !important;
-    color: white !important;
+/* Featured Items Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
-/* Fix Gallery Image Sizing */
+/* Gallery Items */
+.gallery-item {
+    text-align: center;
+}
+
+/* Ensure categories are hidden initially, except featured */
 .gallery-category {
     display: none;
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr;
+    justify-content: center;
     text-align: center;
     margin-top: 20px;
 }
 
+.gallery-category.active {
+    display: grid;
+}
+
 /* Ensure images are properly sized */
 .gallery-category img {
-    display: none;
-    width: 100%; /* Make images responsive */
-    max-width: 450px; /* Set a max size */
+    display: block;
+    width: 100%;
+    max-width: 450px;
     height: auto;
     margin-top: 10px;
     border-radius: 10px;
@@ -356,14 +372,9 @@ footer {
     transition: transform 0.3s ease-in-out;
 }
 
-/* Show first image in the selected category */
-.gallery-category img:first-child {
-    display: block;
-}
-
 /* Image Titles */
 .gallery-category h3 {
-    font-size: 1.6rem;  /* Slightly bigger */
+    font-size: 1.6rem;
     font-weight: bold;
     color: #3F2537;
     text-align: center;
@@ -373,78 +384,79 @@ footer {
 /* Hover Effect */
 .gallery-category img:hover {
     transform: scale(1.05);
-}/* Cart Page Styles */
-.cart-container {
-    width: 90%;
-    max-width: 1000px;
-    margin: 50px auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hide all categories except featured */
+#default {
+    display: grid;
+}
+/* ======== GALLERY PAGE STYLING ======== */
+
+/* Dropdown Styling */
+#category-select {
+    background: #CA9978;
+    color: white;
+    padding: 12px;
+    border: 1px solid #b27c6b;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+    cursor: pointer;
+    width: 280px;
+    display: block;
+    margin: 10px auto;
     text-align: center;
 }
 
-/* Cart Table */
-.cart-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
+/* Improve Dropdown Options */
+#category-select option {
+    background: #EAD3C0;
+    color: #3F2537;
+    font-family: 'Merriweather', serif;
+    padding: 10px;
+    font-size: 16px;
 }
 
-.cart-table th, .cart-table td {
-    padding: 12px;
-    border-bottom: 1px solid #CA9978;
-}
-
-.cart-table th {
-    background: #CA9978;
-    color: white;
-}
-
-.cart-table td {
-    font-size: 1.1rem;
-}
-
-/* Cart Summary */
-.cart-summary {
-    font-size: 1.4rem;
+/* Gallery Grid */
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
 }
 
-/* Buttons */
-#checkout-btn, #clear-cart {
-    padding: 12px 20px;
-    font-size: 1rem;
+/* Gallery Items */
+.gallery-category {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Show only one image at a time */
+.gallery-category img {
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.gallery-category img:hover {
+    transform: scale(1.05);
+}
+
+/* Image Titles */
+.gallery-category h3 {
+    font-size: 1.4rem;
     font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-    margin: 10px;
-}
-
-#checkout-btn {
-    background: #CA9978;
-    color: white;
-}
-
-#checkout-btn:hover {
-    background: #b27c6b;
-}
-
-#clear-cart {
-    background: red;
-    color: white;
-}
-
-#clear-cart:hover {
-    background: darkred;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .cart-table {
-        font-size: 0.9rem;
-    }
+    color: #3F2537;
+    text-align: center;
+    margin-top: 10px;
 }

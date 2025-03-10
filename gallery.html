@@ -1,4 +1,3 @@
-<!-- gallery.html - Gallery Page with Dropdown Categories -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,106 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery - The Cozy Nook</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        function showCategory(category) {
-            var categories = document.querySelectorAll('.gallery-category');
-            categories.forEach(function(cat) {
-                cat.style.display = 'none';
-            });
-            document.getElementById(category).style.display = 'block';
-        }
-    </script>
 </head>
 <body>
-    <header>Gallery</header>
+
+    <header class="gallery-header">
+        <div class="gallery-header-content">
+            <h1>Welcome to Our Collection</h1>
+            <p>Where comfort meets style. Discover handcrafted furniture for your dream home.</p>
+            <label for="category-select">Choose a category:</label>
+            <select id="category-select">
+                <option value="default">SELECT</option>
+                <option value="sofas">Sofas & Couches</option>
+                <option value="chairs">Chairs & Recliners</option>
+                <option value="tables">Tables</option>
+                <option value="beds">Beds & Mattresses</option>
+                <option value="pillows">Pillows & Cushions</option>
+            </select>
+        </div>
+    </header>
+
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-           
             <li><a href="team.html">Team</a></li>
             <li><a href="contact.html">Contact</a></li>
-           
             <div class="cart-container">
                 <a href="cart.html" class="cart-link">🛒 <span class="cart-count">0</span></a>
             </div>
         </ul>
     </nav>
+
     <main>
-        <h2>Our Collection</h2>
-        <p>Explore our curated collection of furniture and cozy spaces.</p>
-        
-        <label for="category-select">Choose a category:</label>
-        <select id="category-select" onchange="showCategory(this.value)">
-            
-            <option value="default">SELECT</option>
-            <option value="sofas">Sofas & Couches</option>
-            <option value="chairs">Chairs & Recliners</option>
-            <option value="tables">Tables</option>
-            <option value="beds">Beds & Mattresses</option>
-            <option value="pillows">Pillows & Cushions</option>
-        </select>
-        
-        <section id="default" class="gallery-category" style="display: block;">
-            <h3>Featured Items</h3>
+        <section id="default" class="gallery-category">
+            <h3>Take a look on out latest releases</h3>
             <div class="gallery-grid">
-                <img src="images/sofa1.jpg" alt="Elegant Sofa">
-                <img src="images/chair2.jpg" alt="Classic Recliner">
-                <img src="images/table3.jpg" alt="Elegant Side Table">
-                <img src="images/bed2.jpg" alt="Luxury Mattress">
-                <img src="images/pillow1.jpg" alt="Soft Pillow">
+                <div class="gallery-item">
+                    <h4>Elegant Sofa</h4>
+                    <img src="images/sofa1.jpg" alt="Elegant Sofa">
+                </div>
+                <div class="gallery-item">
+                    <h4>Classic Recliner</h4>
+                    <img src="images/chair2.jpg" alt="Classic Recliner">
+                </div>
+                <div class="gallery-item">
+                    <h4>Elegant Side Table</h4>
+                    <img src="images/sidetable.jpg" alt="Elegant Side Table">
+                </div>
+                <div class="gallery-item">
+                    <h4>Luxury Mattress</h4>
+                    <img src="images/luxurymattress.jpeg" alt="Luxury Mattress">
+                </div>
+                <div class="gallery-item">
+                    <h4>Soft Pillow</h4>
+                    <img src="images/pillow.jpg" alt="Soft Pillow">
+                </div>
+                <div class="gallery-item">
+                    <h4>Dining Table</h4>
+                    <img src="images/dining.jpeg" alt="Dining Table">
+                </div>
             </div>
         </section>
-        
+
         <section id="sofas" class="gallery-category" style="display: none;">
             <h3>Sofas & Couches</h3>
             <div class="gallery-grid">
-                <img src="images/sofa1.jpg" alt="Elegant Sofa">
-                <img src="images/sofa2.jpg" alt="Luxury Couch">
-                <img src="images/sofa3.jpg" alt="Modern Sofa">
+                <div class="gallery-item"><h4>Elegant Sofa</h4><img src="images/sofa1.jpg" alt="Elegant Sofa"></div>
+                <div class="gallery-item"><h4>Luxury Couch</h4><img src="images/sofa2.jpg" alt="Luxury Couch"></div>
+                <div class="gallery-item"><h4>Modern Sofa</h4><img src="images/sofa3.jpg" alt="Modern Sofa"></div>
             </div>
         </section>
-        
+
         <section id="chairs" class="gallery-category" style="display: none;">
             <h3>Chairs & Recliners</h3>
             <div class="gallery-grid">
-                <img src="images/chair1.jpg" alt="Comfortable Chair">
-                <img src="images/chair2.jpg" alt="Classic Recliner">
-                <img src="images/chair3.jpg" alt="Modern Lounge Chair">
+                <div class="gallery-item"><h4>Comfortable Chair</h4><img src="images/chair1.jpg" alt="Comfortable Chair"></div>
+                <div class="gallery-item"><h4>Classic Recliner</h4><img src="images/chair2.jpg" alt="Classic Recliner"></div>
+                <div class="gallery-item"><h4>Modern Lounge Chair</h4><img src="images/chair3.jpg" alt="Modern Lounge Chair"></div>
             </div>
         </section>
-        
+
         <section id="tables" class="gallery-category" style="display: none;">
             <h3>Tables</h3>
             <div class="gallery-grid">
-                <img src="images/dinningtable.jpg" alt="Dining Table">
-                <img src="images/table2.jpg" alt="Coffee Table">
-                <img src="images/table2.jpg" alt="Elegant Side Table">
+                <div class="gallery-item"><h4>Dining Table</h4><img src="images/dinningtable.jpg" alt="Dining Table"></div>
+                <div class="gallery-item"><h4>Coffee Table</h4><img src="images/table2.jpg" alt="Coffee Table"></div>
+                <div class="gallery-item"><h4>Elegant Side Table</h4><img src="images/table3.jpg" alt="Elegant Side Table"></div>
             </div>
         </section>
-        
-        <section id="beds" class="gallery-category" style="display: none;">
-            <h3>Beds & Mattresses</h3>
-            <div class="gallery-grid">
-                <img src="images/bed1.jpg" alt="Cozy Bed">
-                <img src="images/bed2.jpg" alt="Luxury Mattress">
-                <img src="images/bed3.jpg" alt="Modern Bed Design">
-            </div>
-        </section>
-        
-        <section id="pillows" class="gallery-category" style="display: none;">
-            <h3>Pillows & Cushions</h3>
-            <div class="gallery-grid">
-                <img src="images/pillow.jpg" alt="Soft Pillow">
-                <img src="images/pillow2.jpg" alt="Decorative Cushion">
-                <img src="images/pillow3.jpg" alt="Luxury Cushion Set">
-            </div>
-        </section>
+
     </main>
+
     <footer>
         <p>&copy; 2025 The Cozy Nook | All rights reserved.</p>
     </footer>
+
 </body>
 </html>
