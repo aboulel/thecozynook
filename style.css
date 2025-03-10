@@ -28,8 +28,8 @@ body {
     min-height: 100vh;
 
     header {
-        background: #CA9978;
-        color: white;
+        background: white;
+        color:#3F2537 ;
         padding: 2rem 0;
         text-align: center;
         font-size: 2.5rem;
@@ -57,7 +57,7 @@ body {
     
     .sign-in {
         background: white;
-        color: #CA9978;
+        color: #3F2537; ;
         font-size: 1rem;
         font-weight: bold;
         border: none;
@@ -69,8 +69,8 @@ body {
     }
     
     .sign-in:hover {
-        background: #b88364;
-        color: white;
+        background: white; ;
+        color: #3F2537;
     }
 }    
 
@@ -114,10 +114,10 @@ nav ul li a {
     font-family: 'Merriweather', serif; /* Updated font */
 }/* Dropdown Styling */
 select {
-    background: #CA9978; /* Background color */
-    color: white; /* Text color */
+    background: white ; /* Background color */
+    color: #3F2537; /* Text color */
     padding: 8px;
-    border: 1px solid #b27c6b;
+    border: 1px solid #f5f5dc; ;
     border-radius: 5px;
     font-family: 'Merriweather', serif;
     font-size: 16px;
@@ -125,7 +125,7 @@ select {
 
 /* Dropdown Options */
 select option {
-    background: #EAD3C0; /* Change this to match your theme */
+    background: white;  /* Change this to match your theme */
     color: #3F2537; /* Text color */
     font-family: 'Merriweather', serif;
 }
@@ -133,8 +133,8 @@ select option {
 /* Change hover & selected item color */
 select option:hover, 
 select option:checked {
-    background: #C39272 !important; /* Highlight color */
-    color: white !important;
+    background: white  !important; /* Highlight color */
+    color: #3F2537 !important;
 }
 
 option {
@@ -145,7 +145,7 @@ option {
 
 
 nav ul li a:hover {
-    color: #CA9978;
+    color: #f5f5dc; ;
     transform: scale(1.1);
 }
 
@@ -153,8 +153,8 @@ nav ul li a:hover {
 .hero {
     text-align: center;
     padding: 80px 20px;
-    color: white;
-    background: rgba(233, 209, 209, 0.4);
+    color: #3F2537;
+    background: white rgba(233, 209, 209, 0.4);
     backdrop-filter: blur(5px);
 }
 
@@ -174,8 +174,8 @@ nav ul li a:hover {
     display: inline-block;
     margin-top: 20px;
     padding: 12px 24px;
-    background: #CA9978;
-    color: white;
+    background: white ;
+    color: #3F2537;
     font-size: 1.2rem;
     text-decoration: none;
     border-radius: 8px;
@@ -183,7 +183,7 @@ nav ul li a:hover {
 }
 
 .cta-button:hover {
-    background: #b27c6b;
+    background: white ;
 }
 
 /* Featured Products Section */
@@ -240,7 +240,7 @@ nav ul li a:hover {
 .testimonials {
     text-align: center;
     padding: 50px 20px;
-    background: #F5F5F5;
+    background:white;
 }
 
 .testimonial {
@@ -295,23 +295,27 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background:#97551B;
-    color: white;
+    background:white ;
+    color: #3F2537;
     text-align: center;
     padding: 10px 0;
     position: relative;
     width: 100%;
+<<<<<<< Updated upstream
 }/* ======== FIXES FOR GALLERY PAGE (DOES NOT TOUCH HOME PAGE) ======== */
 
 
 /* ======== FIXES FOR GALLERY PAGE (DOES NOT TOUCH HOME PAGE) ======== */
+=======
+}
+>>>>>>> Stashed changes
 
 /* Dropdown Styling */
 #category-select {
-    background: #CA9978;
-    color: white;
+    background: white ;
+    color: #3F2537;
     padding: 12px;
-    border: 1px solid #b27c6b;
+    border: 1px solid #f5f5dc; ;
     border-radius: 8px;
     font-size: 18px;
     font-family: 'Merriweather', serif;
@@ -324,7 +328,7 @@ footer {
 
 /* Improve Dropdown Options */
 #category-select option {
-    background: #EAD3C0;
+    background: #f5f5dc; ;
     color: #3F2537;
     font-family: 'Merriweather', serif;
     padding: 10px;
@@ -393,10 +397,10 @@ footer {
 
 /* Dropdown Styling */
 #category-select {
-    background: #CA9978;
-    color: white;
+    background: white;
+    color: #3F2537;
     padding: 12px;
-    border: 1px solid #b27c6b;
+    border: 1px solid white;
     border-radius: 8px;
     font-size: 18px;
     font-family: 'Merriweather', serif;
@@ -409,7 +413,7 @@ footer {
 
 /* Improve Dropdown Options */
 #category-select option {
-    background: #EAD3C0;
+    background: white;
     color: #3F2537;
     font-family: 'Merriweather', serif;
     padding: 10px;
@@ -459,3 +463,36 @@ footer {
     text-align: center;
     margin-top: 10px;
 }
+.gallery-header-content h1 {
+    font-size: 2rem; /* Slightly smaller */
+    font-family: 'Times New Roman', serif; /* Classic font */
+    text-transform: none; /* Ensures text is not all caps */
+}
+
+.gallery-header-content h1 span {
+    font-size: 1.8rem; /* Smaller than the main heading */
+    font-family: 'Times New Roman', serif;
+    text-transform: none; /* Ensures text is not all caps */
+}
+
+.gallery-header-content p {
+    font-size: 1rem; /* Smaller text */
+    font-family: 'Times New Roman', serif; /* Classic font */
+    text-transform: none; /* Ensures text is not all caps */
+}
+.gallery-header {
+<<<<<<< Updated upstream
+    height: 19vh; /* Adjust this value to make it smaller */
+    display: center;
+    align-items: center; /* Ensures content stays centered */
+}
+=======
+    height: 18vh; /* Adjust this value to make it smaller */
+    display: center;
+    align-items: center; /* Ensures content stays centered */
+}
+header {
+    background-color: white;/* Light beige */
+    padding: 15px 20px; /* Adds spacing for better layout */
+}
+>>>>>>> Stashed changes

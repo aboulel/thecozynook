@@ -33,7 +33,7 @@ html, body {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #CA9978;
+    color: white;
     font-family: 'Playfair Display', serif;
 }
 
@@ -48,15 +48,15 @@ html, body {
     height: 45px;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #CA9978;
+    border: 1px white;
     border-radius: 5px;
     outline: none;
     transition: 0.3s;
 }
 
 .input-box input:focus {
-    border-color: #b27c6b;
-    box-shadow: 0 0 8px rgba(202, 153, 120, 0.5);
+    border-color: white;
+    box-shadow: 0 0 8px #3F2537(202, 153, 120, 0.5);
 }
 
 .button input[type="submit"] {
