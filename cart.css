@@ -89,6 +89,48 @@ nav ul li a:hover {
     color: #CA9978;
     transform: scale(1.1);
 }
+/* ======= Navigation ======= */
+nav {
+    background: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between; /* Ensure space between menu and Sign In */
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 0 auto;
+    max-width: 90%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Ensure nav-links stay in the center */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0 auto; /* Center the menu */
+}
+
+/* Sign In Button Styling */
+.sign-in {
+    position: absolute;
+    top: 15px;  /* Adjust distance from the top */
+    right: 30px; /* Adjust distance from the right */
+    font-weight: bold;
+    color: #3F2537;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 8px 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.sign-in:hover {
+    color: #8B5E3B;
+}
+
 
 /* ======= Cart Container ======= */
 .cart-container {
