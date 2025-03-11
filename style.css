@@ -556,3 +556,36 @@ footer {
         width: 100%;
     }
 }
+.gallery-header-content h1 {
+    font-size: 2rem; /* Slightly smaller */
+    font-family: 'Times New Roman', serif; /* Classic font */
+    text-transform: none; /* Ensures text is not all caps */
+}
+
+.gallery-header-content h1 span {
+    font-size: 1.8rem; /* Smaller than the main heading */
+    font-family: 'Times New Roman', serif;
+    text-transform: none; /* Ensures text is not all caps */
+}
+
+.gallery-header-content p {
+    font-size: 1rem; /* Smaller text */
+    font-family: 'Times New Roman', serif; /* Classic font */
+    text-transform: none; /* Ensures text is not all caps */
+}
+.gallery-header {
+<<<<<<< Updated upstream
+    height: 19vh; /* Adjust this value to make it smaller */
+    display: center;
+    align-items: center; /* Ensures content stays centered */
+}
+=======
+    height: 18vh; /* Adjust this value to make it smaller */
+    display: center;
+    align-items: center; /* Ensures content stays centered */
+}
+header {
+    background-color: white;/* Light beige */
+    padding: 15px 20px; /* Adds spacing for better layout */
+}
+>>>>>>> Stashed changes
