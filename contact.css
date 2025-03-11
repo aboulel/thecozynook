@@ -1,36 +1,38 @@
 /* Contact Page Styles */
 .contact-container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.95);
+    max-width: 750px; /* Slightly reduce width */
+    margin: 20px auto; /* Reduce margin for less height */
+    padding: 15px; /* Reduce padding */
+    background: rgba(255, 255, 255, 0.9); /* Slightly reduce opacity */
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
     text-align: center;
 }
 
+/* Smaller Header */
 .contact-container h2 {
-    font-size: 2rem;
+    font-size: 1.5rem; /* Reduce font size */
     color: #3F2537;
     font-family: 'Merriweather', serif;
-    margin-bottom: 10px;
+    margin-bottom: 8px; /* Adjust spacing */
 }
 
 .contact-container p {
-    font-size: 1.1rem;
+    font-size: 0.95rem; /* Reduce text size */
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
+/* Contact Form */
 .contact-form {
-    padding: 20px;
+    padding: 15px;
 }
 
 /* Input Fields */
 .form-row {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Reduce space */
 }
 
 .input-data {
@@ -41,8 +43,8 @@
 .input-data input,
 .textarea textarea {
     width: 100%;
-    font-size: 1rem;
-    padding: 10px;
+    font-size: 0.9rem; /* Reduce font size */
+    padding: 8px; /* Reduce padding */
     border: none;
     border-bottom: 2px solid rgba(0, 0, 0, 0.12);
     outline: none;
@@ -56,9 +58,9 @@
 
 .input-data label {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    font-size: 1rem;
+    bottom: 8px; /* Adjust positioning */
+    left: 8px;
+    font-size: 0.9rem; /* Reduce size */
     transition: all 0.3s ease;
     color: #555;
 }
@@ -67,15 +69,15 @@
 .textarea textarea:focus ~ label,
 .input-data input:valid ~ label,
 .textarea textarea:valid ~ label {
-    transform: translateY(-20px);
-    font-size: 0.85rem;
+    transform: translateY(-18px);
+    font-size: 0.8rem;
     color: #CA9978;
 }
 
 /* Submit Button */
 .submit-btn {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .submit-btn .input-data {
@@ -85,11 +87,17 @@
 .submit-btn input {
     background: #CA9978;
     color: white;
-   
-}/* Floating label active */
+    font-size: 0.9rem; /* Reduce button text size */
+    padding: 8px 16px; /* Adjust button padding */
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Floating label active */
 .input-data label.active {
-    transform: translateY(-20px);
-    font-size: 0.85rem;
+    transform: translateY(-18px);
+    font-size: 0.8rem;
     color: #CA9978;
     transition: all 0.3s ease-in-out;
 }
@@ -97,19 +105,19 @@
 /* Shake Effect for empty inputs */
 @keyframes shake {
     0%, 100% { transform: translateX(0); }
-    25% { transform: translateX(-5px); }
-    50% { transform: translateX(5px); }
-    75% { transform: translateX(-5px); }
+    25% { transform: translateX(-4px); }
+    50% { transform: translateX(4px); }
+    75% { transform: translateX(-4px); }
 }
 
 .shake {
-    animation: shake 0.4s ease-in-out;
+    animation: shake 0.3s ease-in-out;
     border-bottom: 2px solid red !important;
 }
 
 /* Submit button click effect */
 .clicked {
-    animation: clickEffect 0.4s ease-in-out;
+    animation: clickEffect 0.3s ease-in-out;
 }
 
 @keyframes clickEffect {
@@ -117,3 +125,13 @@
     50% { transform: scale(0.95); }
     100% { transform: scale(1); }
 }
+/* Contact Us Header */
+header h1 {
+    font-size: 1.8rem; /* Reduced size */
+    color: white;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Contact Section Heading */
