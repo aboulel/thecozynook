@@ -10,27 +10,16 @@
 
     <header class="gallery-header">
         <div class="gallery-header-content">
-            <h1>Welcome to Our Collection</h1>
-            <p>Where comfort meets style. Discover handcrafted furniture for your dream home.</p>
-            <label for="category-select">Choose a category:</label>
-            <select id="category-select">
-                <option value="default">SELECT</option>
-                <option value="sofas">Sofas & Couches</option>
-                <option value="chairs">Chairs & Recliners</option>
-                <option value="tables">Tables</option>
-                <option value="beds">Beds & Mattresses</option>
-                <option value="pillows">Pillows & Cushions</option>
-            </select>
+            <h1>The Cozy Nook</h1>
         </div>
     </header>
 
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            
             <li><a href="services.html">Services</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="team.html">Team/about us</a></li>
+            <li><a href="team.html">Team/About Us</a></li>
             <li><a href="contact.html">Contact</a></li>
             <div class="cart-container">
                 <a href="cart.html" class="cart-link">🛒 <span class="cart-count">0</span></a>
@@ -38,61 +27,121 @@
         </ul>
     </nav>
 
+    <section class="animated-intro">
+        <p>
+            Where comfort meets style.<br>
+            Discover handcrafted furniture for your dream home.
+        </p>
+    </section>
+
+    <section class="category-selection">
+        <select id="category-select">
+            <option value="default">SELECT</option>
+            <option value="sofas">Sofas & Couches</option>
+            <option value="chairs">Chairs & Recliners</option>
+            <option value="tables">Tables</option>
+            <option value="beds">Beds & Mattresses</option>
+            <option value="pillows">Pillows & Cushions</option>
+        </select>
+    </section>
+
     <main>
-        <section id="default" class="gallery-category">
-            <h3>Take a look on out latest releases</h3>
+        <!-- Default Section -->
+        <section id="default" class="gallery-category active">
+            <h3>Take a look at our latest releases</h3>
             <div class="gallery-grid">
                 <div class="gallery-item">
                     <h4>Elegant Sofa</h4>
                     <img src="images/sofa1.jpg" alt="Elegant Sofa">
+                    <p class="price">$499.99</p>
+                    <button class="add-to-cart" data-name="Elegant Sofa" data-price="499.99">Add to Cart</button>
                 </div>
+
                 <div class="gallery-item">
                     <h4>Classic Recliner</h4>
                     <img src="images/chair2.jpg" alt="Classic Recliner">
+                    <p class="price">$299.99</p>
+                    <button class="add-to-cart" data-name="Classic Recliner" data-price="299.99">Add to Cart</button>
                 </div>
-                <div class="gallery-item">
-                    <h4>Elegant Side Table</h4>
-                    <img src="images/sidetable.jpg" alt="Elegant Side Table">
-                </div>
-                <div class="gallery-item">
-                    <h4>Luxury Mattress</h4>
-                    <img src="images/luxurymattress.jpeg" alt="Luxury Mattress">
-                </div>
-                <div class="gallery-item">
-                    <h4>Soft Pillow</h4>
-                    <img src="images/pillow.jpg" alt="Soft Pillow">
-                </div>
+
                 <div class="gallery-item">
                     <h4>Dining Table</h4>
                     <img src="images/dining.jpeg" alt="Dining Table">
+                    <p class="price">$599.99</p>
+                    <button class="add-to-cart" data-name="Dining Table" data-price="599.99">Add to Cart</button>
                 </div>
             </div>
         </section>
 
-        <section id="sofas" class="gallery-category" style="display: none;">
+        <!-- Sofas & Couches -->
+        <section id="sofas" class="gallery-category">
             <h3>Sofas & Couches</h3>
             <div class="gallery-grid">
-                <div class="gallery-item"><h4>Elegant Sofa</h4><img src="images/sofa1.jpg" alt="Elegant Sofa"></div>
-                <div class="gallery-item"><h4>Luxury Couch</h4><img src="images/sofa2.jpg" alt="Luxury Couch"></div>
-                <div class="gallery-item"><h4>Modern Sofa</h4><img src="images/sofa3.jpg" alt="Modern Sofa"></div>
+                <div class="gallery-item">
+                    <h4>Luxury Couch</h4>
+                    <img src="images/sofa2.jpg" alt="Luxury Couch">
+                    <p class="price">$799.99</p>
+                    <button class="add-to-cart" data-name="Luxury Couch" data-price="799.99">Add to Cart</button>
+                </div>
+
+                <div class="gallery-item">
+                    <h4>Modern Sofa</h4>
+                    <img src="images/sofa1.jpg" alt="Modern Sofa">
+                    <p class="price">$699.99</p>
+                    <button class="add-to-cart" data-name="Modern Sofa" data-price="699.99">Add to Cart</button>
+                </div>
             </div>
         </section>
 
-        <section id="chairs" class="gallery-category" style="display: none;">
+        <!-- Chairs & Recliners -->
+        <section id="chairs" class="gallery-category">
             <h3>Chairs & Recliners</h3>
             <div class="gallery-grid">
-                <div class="gallery-item"><h4>Comfortable Chair</h4><img src="images/chair1.jpg" alt="Comfortable Chair"></div>
-                <div class="gallery-item"><h4>Classic Recliner</h4><img src="images/chair2.jpg" alt="Classic Recliner"></div>
-                <div class="gallery-item"><h4>Modern Lounge Chair</h4><img src="images/chair3.jpg" alt="Modern Lounge Chair"></div>
+                <div class="gallery-item">
+                    <h4>Comfortable Chair</h4>
+                    <img src="images/chair1.jpg" alt="Comfortable Chair">
+                    <p class="price">$249.99</p>
+                    <button class="add-to-cart" data-name="Comfortable Chair" data-price="249.99">Add to Cart</button>
+                </div>
             </div>
         </section>
 
-        <section id="tables" class="gallery-category" style="display: none;">
+        <!-- Tables -->
+        <section id="tables" class="gallery-category">
             <h3>Tables</h3>
             <div class="gallery-grid">
-                <div class="gallery-item"><h4>Dining Table</h4><img src="images/dinningtable.jpg" alt="Dining Table"></div>
-                <div class="gallery-item"><h4>Coffee Table</h4><img src="images/table2.jpg" alt="Coffee Table"></div>
-                <div class="gallery-item"><h4>Elegant Side Table</h4><img src="images/table3.jpg" alt="Elegant Side Table"></div>
+                <div class="gallery-item">
+                    <h4>Dining Table</h4>
+                    <img src="images/diningtable.jpg" alt="Dining Table">
+                    <p class="price">$599.99</p>
+                    <button class="add-to-cart" data-name="Dining Table" data-price="599.99">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Beds & Mattresses -->
+        <section id="beds" class="gallery-category">
+            <h3>Beds & Mattresses</h3>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <h4>Luxury Mattress</h4>
+                    <img src="images/luxurymattress.jpeg" alt="Luxury Mattress">
+                    <p class="price">$899.99</p>
+                    <button class="add-to-cart" data-name="Luxury Mattress" data-price="899.99">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pillows & Cushions -->
+        <section id="pillows" class="gallery-category">
+            <h3>Pillows & Cushions</h3>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <h4>Soft Pillow</h4>
+                    <img src="images/pillow.jpg" alt="Soft Pillow">
+                    <p class="price">$49.99</p>
+                    <button class="add-to-cart" data-name="Soft Pillow" data-price="49.99">Add to Cart</button>
+                </div>
             </div>
         </section>
 
@@ -102,5 +151,6 @@
         <p>&copy; 2025 The Cozy Nook | All rights reserved.</p>
     </footer>
 
+    <script src="gallery.js"></script>
 </body>
 </html>

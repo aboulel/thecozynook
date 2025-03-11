@@ -459,3 +459,105 @@ footer {
     text-align: center;
     margin-top: 10px;
 }
+/* Smooth Fade-In Slide Animation */
+/* Enhanced Animated Intro Section */
+.animated-intro {
+    text-align: center;
+    font-size: 2rem; /* Increased font size */
+    font-weight: bold;
+    font-family: 'Playfair Display', serif; /* Playful and modern */
+    color: #FFFFFF;
+    margin: 20px auto;
+    padding: 20px;
+    display: inline-block;
+    background: linear-gradient(135deg, #FFB6C1, #CA9978, #EAD3C0);
+    background-size: 200% 200%;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    animation: gradientMove 3s infinite alternate;
+}
+
+/* Gradient Animation for the Background */
+@keyframes gradientMove {
+    0% { background-position: left top; }
+    100% { background-position: right bottom; }
+}
+
+/* Letter-by-Letter Drop Animation */
+.animated-intro span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: dropLetters 0.8s ease-in-out forwards;
+}
+
+/* Keyframe for Dropping Letters */
+@keyframes dropLetters {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Automatically Apply Delays to Each Letter */
+.animated-intro span {
+    animation-delay: calc(var(--delay) * 0.05s);
+}
+/* Gallery Header Styling */
+.gallery-header {
+    background: #CA9978;
+    text-align: center;
+    padding: 2rem 0;
+    border-radius: 0 0 15px 15px;
+}
+
+/* Smaller and Stylish Header Text */
+.gallery-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+    margin: 0;
+}
+/* ======= Add to Cart Button Styling ======= */
+.add-to-cart {
+    background: #CA9978;  /* Soft brownish tone to match the theme */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    text-align: center;
+}
+
+/* Hover Effect */
+.add-to-cart:hover {
+    background: #b27c6b; /* Slightly darker shade for interaction */
+    transform: scale(1.05);
+}
+
+/* Add Click Animation */
+.add-to-cart:active {
+    transform: scale(0.95);
+}
+
+/* Price Styling */
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3F2537; /* Dark brownish text */
+    text-align: center;
+    margin: 5px 0;
+}
