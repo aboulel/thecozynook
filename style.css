@@ -300,7 +300,15 @@ footer {
     text-align: center;
     padding: 10px 0;
     position: relative;
-    width: 100%;}
+    width: 100%;
+<<<<<<< Updated upstream
+}/* ======== FIXES FOR GALLERY PAGE (DOES NOT TOUCH HOME PAGE) ======== */
+
+
+/* ======== FIXES FOR GALLERY PAGE (DOES NOT TOUCH HOME PAGE) ======== */
+=======
+}
+>>>>>>> Stashed changes
 
 /* Dropdown Styling */
 #category-select {
