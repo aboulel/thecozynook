@@ -167,12 +167,12 @@ button {
 
 /* Clear Cart */
 #clear-cart {
-    background: #e63946;
+    background:#CA9978;
     color: white;
 }
 
 #clear-cart:hover {
-    background: #c22f3b;
+    background: #CA9978;
     transform: scale(1.05);
 }
 
@@ -200,4 +200,33 @@ footer {
     padding: 10px 0;
     margin-top: auto;
     width: 100%;
+}
+/* Add this to your existing CSS */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.sign-in {
+    margin-left: auto; /* Push to the right */
+    font-weight: bold;
+    color: #3F2537; /* Adjust color */
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.sign-in:hover {
+    color: #8B5E3B; /* Change color on hover */
 }
