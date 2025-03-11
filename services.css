@@ -56,6 +56,10 @@ main {
 .service-box.expanded h2 {
     color: white;
 }
+.service-box.expanded form {
+    display: block !important;
+}
+
 
 /* Form Styling */
 input, textarea {
