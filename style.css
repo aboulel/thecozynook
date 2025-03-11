@@ -455,3 +455,30 @@ footer {
     text-align: center;
     margin-top: 10px;
 }
+.gallery-header {
+    background-color: #f5f5f5; /* Light background color for the header */
+    padding: 20px 0; /* Adjusts the padding to reduce height */
+    text-align: center; /* Centers the content */
+}
+
+.gallery-header-content {
+    max-width: 1200px; /* Limits the width of the content */
+    margin: 0 auto; /* Centers the content horizontally */
+    padding: 10px;
+}
+
+h1 {
+    font-size: 24px; /* Makes the font size smaller for the header */
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 14px; /* Makes the font size smaller for the label */
+    margin-right: 10px;
+}
+
+select {
+    font-size: 14px; /* Makes the font size smaller for the select dropdown */
+    padding: 5px; /* Adds padding for better readability */
+    border-radius: 4px; /* Gives a rounded border */
+}
